@@ -19,13 +19,17 @@
 
 <!-- Conteúdo principal -->
 <main>
-  <!-- Seção de banner/hero -->
-  <section id="inicio" class="hero-section">
+  <!-- Seção de banner/hero - Sempre visível -->
+  <section *ngIf="activeSection === 'inicio'" class="hero-section">
     <div class="container">
       <div class="hero-content">
         <h2>Cuidado especializado para pessoas com autismo</h2>
         <p>Na Clínica Inclusivamente, oferecemos atendimento personalizado e humanizado para pessoas com Transtorno do Espectro Autista (TEA).</p>
-        <button class="btn-primary">Agende uma consulta</button>
+        <div class="hero-buttons">
+          <button class="btn-primary" (click)="setActiveSection('contato')">Agende uma consulta</button>
+          <button class="btn-secondary" (click)="setActiveSection('servicos')">Conheça nossos serviços</button>
+          <button class="btn-telegram" (click)="setActiveSection('equipe')">Fale conosco</button>
+        </div>
       </div>
       <div class="hero-image">
         <!-- Imagem ilustrativa será adicionada via CSS -->
@@ -34,7 +38,7 @@
   </section>
 
   <!-- Seção Sobre Nós -->
-  <section id="sobre" class="about-section">
+  <section *ngIf="activeSection === 'sobre'" class="about-section">
     <div class="container">
       <h2 class="section-title">Sobre Nós</h2>
       <div class="about-content">
@@ -42,6 +46,7 @@
           <p>A Clínica Inclusivamente nasceu do desejo de oferecer um atendimento especializado e humanizado para pessoas com Transtorno do Espectro Autista (TEA) e suas famílias.</p>
           <p>Nossa equipe multidisciplinar trabalha de forma integrada para proporcionar o melhor acompanhamento possível, respeitando a individualidade de cada paciente e promovendo sua autonomia e qualidade de vida.</p>
           <p>Acreditamos que cada pessoa com autismo possui potencialidades únicas que podem ser desenvolvidas com o apoio adequado.</p>
+          <p>Atendemos indivíduos dentro do espectro autista com excelência, aplicando a transdisciplinaridade profissional e utilizando a Análise Aplicada do Comportamento (ABA) como eixo terapêutico central, a partir da criação de um planejamento terapêutico individualizado, avaliando também o contexto escolar e social de cada família.</p>
         </div>
         <div class="about-values">
           <h3>Nossos Valores</h3>
@@ -50,16 +55,29 @@
             <li><strong>Empatia:</strong> Buscamos compreender as necessidades específicas de cada paciente e sua família.</li>
             <li><strong>Excelência:</strong> Comprometemo-nos com a qualidade e atualização constante de nossas práticas.</li>
             <li><strong>Inclusão:</strong> Trabalhamos para promover a participação plena das pessoas com autismo na sociedade.</li>
+            <li><strong>Ética:</strong> Atuamos com compromisso, honestidade e respeito à criança e à família.</li>
+            <li><strong>Ciência:</strong> Nossa atuação é baseada em evidências científicas.</li>
           </ul>
+        </div>
+      </div>
+      <div class="about-mission-vision">
+        <div class="mission">
+          <h3>Nossa Missão</h3>
+          <p>Atender indivíduos dentro do espectro autista com excelência, aplicando a transdisciplinaridade profissional e utilizando a Análise Aplicada do Comportamento (ABA) como eixo terapêutico central.</p>
+        </div>
+        <div class="vision">
+          <h3>Nossa Visão</h3>
+          <p>Ser referência no tratamento do indivíduo com Transtorno do Espectro Autista (TEA), tendo como principal característica a transdisciplinaridade profissional.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Seção de Serviços -->
-  <section id="servicos" class="services-section">
+  <section *ngIf="activeSection === 'servicos'" class="services-section">
     <div class="container">
       <h2 class="section-title">Nossos Serviços</h2>
+      <p class="services-intro">Oferecemos uma abordagem transdisciplinar para o tratamento do autismo, com profissionais especializados trabalhando de forma integrada.</p>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">🧠</div>
@@ -68,8 +86,8 @@
         </div>
         <div class="service-card">
           <div class="service-icon">👨‍⚕️</div>
-          <h3>Psicologia</h3>
-          <p>Atendimento psicológico especializado para pessoas com TEA, utilizando abordagens baseadas em evidências científicas.</p>
+          <h3>Análise do Comportamento Aplicada (ABA)</h3>
+          <p>Intervenção baseada em evidências científicas para desenvolvimento de habilidades e redução de comportamentos desafiadores.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🗣️</div>
@@ -91,36 +109,49 @@
           <h3>Acompanhamento Escolar</h3>
           <p>Orientação para inclusão escolar e adaptações necessárias para o desenvolvimento acadêmico.</p>
         </div>
+        <div class="service-card">
+          <div class="service-icon">🎵</div>
+          <h3>Musicoterapia</h3>
+          <p>Utilização da música como ferramenta terapêutica para estimular o desenvolvimento e a expressão.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏃</div>
+          <h3>Psicomotricidade</h3>
+          <p>Desenvolvimento da consciência corporal, coordenação motora e integração sensorial.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Seção Nossa Equipe -->
-  <section id="equipe" class="team-section">
+  <section *ngIf="activeSection === 'equipe'" class="team-section">
     <div class="container">
       <h2 class="section-title">Nossa Equipe</h2>
       <p class="team-intro">Contamos com profissionais especializados e comprometidos com o desenvolvimento e bem-estar de nossos pacientes.</p>
+      <div class="team-description">
+        <p>Temos uma equipe composta por fonoaudiólogos, terapeutas ocupacionais, psicopedagogos, psicólogos, psicomotricistas, musicoterapeutas e profissionais de educação física. Além de parceria com centros de neurociências para garantir a melhor abordagem baseada em evidências científicas.</p>
+      </div>
       <div class="team-grid">
         <div class="team-member">
-          <div class="member-photo"><!-- Foto será adicionada via CSS --></div>
+          <div class="member-photo">👩‍⚕️</div>
           <h3>Dra. Ana Silva</h3>
           <p class="member-role">Neurologista - Diretora Clínica</p>
           <p>Especialista em Neurologia Infantil com foco em Transtornos do Neurodesenvolvimento.</p>
         </div>
         <div class="team-member">
-          <div class="member-photo"><!-- Foto será adicionada via CSS --></div>
+          <div class="member-photo">👨‍⚕️</div>
           <h3>Dr. Carlos Oliveira</h3>
           <p class="member-role">Psiquiatra</p>
           <p>Especialista em Psiquiatria da Infância e Adolescência com experiência em TEA.</p>
         </div>
         <div class="team-member">
-          <div class="member-photo"><!-- Foto será adicionada via CSS --></div>
+          <div class="member-photo">👩‍💼</div>
           <h3>Mariana Santos</h3>
           <p class="member-role">Psicóloga</p>
           <p>Especialista em Análise do Comportamento Aplicada (ABA) e Terapia Cognitivo-Comportamental.</p>
         </div>
         <div class="team-member">
-          <div class="member-photo"><!-- Foto será adicionada via CSS --></div>
+          <div class="member-photo">👩‍🔬</div>
           <h3>Juliana Costa</h3>
           <p class="member-role">Fonoaudióloga</p>
           <p>Especialista em Comunicação Alternativa e Transtornos da Linguagem.</p>
@@ -130,7 +161,7 @@
   </section>
 
   <!-- Seção de Contato -->
-  <section id="contato" class="contact-section">
+  <section *ngIf="activeSection === 'contato'" class="contact-section">
     <div class="container">
       <h2 class="section-title">Entre em Contato</h2>
       <div class="contact-content">
