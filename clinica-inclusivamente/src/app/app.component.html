@@ -2,16 +2,48 @@
 <header class="header">
   <div class="container">
     <div class="logo">
-      <h1>Clínica Inclusivamente</h1>
-      <p>Especializada em Autismo</p>
+      <img
+        src="https://i.ibb.co/VWBqftmq/A-o-Loc.png"
+        alt="Logo da Clínica Inclusivamente"
+      />
     </div>
     <nav class="main-nav">
       <ul>
-        <li><a (click)="setActiveSection('inicio')" [class.active]="activeSection === 'inicio'">Início</a></li>
-        <li><a (click)="setActiveSection('sobre')" [class.active]="activeSection === 'sobre'">Sobre Nós</a></li>
-        <li><a (click)="setActiveSection('servicos')" [class.active]="activeSection === 'servicos'">Serviços</a></li>
-        <li><a (click)="setActiveSection('equipe')" [class.active]="activeSection === 'equipe'">Nossa Equipe</a></li>
-        <li><a (click)="setActiveSection('contato')" [class.active]="activeSection === 'contato'">Contato</a></li>
+        <li>
+          <a
+            (click)="setActiveSection('inicio')"
+            [class.active]="activeSection === 'inicio'"
+            >Início</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="setActiveSection('sobre')"
+            [class.active]="activeSection === 'sobre'"
+            >Sobre Nós</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="setActiveSection('servicos')"
+            [class.active]="activeSection === 'servicos'"
+            >Serviços</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="setActiveSection('equipe')"
+            [class.active]="activeSection === 'equipe'"
+            >Nossa Equipe</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="setActiveSection('contato')"
+            [class.active]="activeSection === 'contato'"
+            >Contato</a
+          >
+        </li>
       </ul>
     </nav>
   </div>
@@ -24,11 +56,17 @@
     <div class="container">
       <div class="hero-content">
         <h2>Cuidado especializado para pessoas com autismo</h2>
-        <p>Na Clínica Inclusivamente, oferecemos atendimento personalizado e humanizado para pessoas com Transtorno do Espectro Autista (TEA).</p>
+        <p>
+          Na Clínica Inclusivamente, oferecemos atendimento personalizado e
+          humanizado para pessoas com Transtorno do Espectro Autista (TEA).
+        </p>
         <div class="hero-buttons">
-          <button class="btn-primary" (click)="setActiveSection('contato')">Agende uma consulta</button>
-          <button class="btn-secondary" (click)="setActiveSection('servicos')">Conheça nossos serviços</button>
-          <button class="btn-telegram" (click)="setActiveSection('equipe')">Fale conosco</button>
+          <button class="btn-primary" (click)="setActiveSection('contato')">
+            Agende uma consulta
+          </button>
+          <button class="btn-secondary" (click)="setActiveSection('servicos')">
+            Conheça nossos serviços
+          </button>
         </div>
       </div>
       <div class="hero-image">
@@ -43,31 +81,77 @@
       <h2 class="section-title">Sobre Nós</h2>
       <div class="about-content">
         <div class="about-text">
-          <p>A Clínica Inclusivamente nasceu do desejo de oferecer um atendimento especializado e humanizado para pessoas com Transtorno do Espectro Autista (TEA) e suas famílias.</p>
-          <p>Nossa equipe multidisciplinar trabalha de forma integrada para proporcionar o melhor acompanhamento possível, respeitando a individualidade de cada paciente e promovendo sua autonomia e qualidade de vida.</p>
-          <p>Acreditamos que cada pessoa com autismo possui potencialidades únicas que podem ser desenvolvidas com o apoio adequado.</p>
-          <p>Atendemos indivíduos dentro do espectro autista com excelência, aplicando a transdisciplinaridade profissional e utilizando a Análise Aplicada do Comportamento (ABA) como eixo terapêutico central, a partir da criação de um planejamento terapêutico individualizado, avaliando também o contexto escolar e social de cada família.</p>
+          <p>
+            A Clínica Inclusivamente nasceu do desejo de oferecer um atendimento
+            especializado e humanizado para pessoas com Transtorno do Espectro
+            Autista (TEA) e suas famílias.
+          </p>
+          <p>
+            Nossa equipe multidisciplinar trabalha de forma integrada para
+            proporcionar o melhor acompanhamento possível, respeitando a
+            individualidade de cada paciente e promovendo sua autonomia e
+            qualidade de vida.
+          </p>
+          <p>
+            Acreditamos que cada pessoa com autismo possui potencialidades
+            únicas que podem ser desenvolvidas com o apoio adequado.
+          </p>
+          <p>
+            Atendemos indivíduos dentro do espectro autista com excelência,
+            aplicando a transdisciplinaridade profissional e utilizando a
+            Análise Aplicada do Comportamento (ABA) como eixo terapêutico
+            central, a partir da criação de um planejamento terapêutico
+            individualizado, avaliando também o contexto escolar e social de
+            cada família.
+          </p>
         </div>
         <div class="about-values">
           <h3>Nossos Valores</h3>
           <ul>
-            <li><strong>Respeito:</strong> Valorizamos a neurodiversidade e as características individuais de cada pessoa.</li>
-            <li><strong>Empatia:</strong> Buscamos compreender as necessidades específicas de cada paciente e sua família.</li>
-            <li><strong>Excelência:</strong> Comprometemo-nos com a qualidade e atualização constante de nossas práticas.</li>
-            <li><strong>Inclusão:</strong> Trabalhamos para promover a participação plena das pessoas com autismo na sociedade.</li>
-            <li><strong>Ética:</strong> Atuamos com compromisso, honestidade e respeito à criança e à família.</li>
-            <li><strong>Ciência:</strong> Nossa atuação é baseada em evidências científicas.</li>
+            <li>
+              <strong>Respeito:</strong> Valorizamos a neurodiversidade e as
+              características individuais de cada pessoa.
+            </li>
+            <li>
+              <strong>Empatia:</strong> Buscamos compreender as necessidades
+              específicas de cada paciente e sua família.
+            </li>
+            <li>
+              <strong>Excelência:</strong> Comprometemo-nos com a qualidade e
+              atualização constante de nossas práticas.
+            </li>
+            <li>
+              <strong>Inclusão:</strong> Trabalhamos para promover a
+              participação plena das pessoas com autismo na sociedade.
+            </li>
+            <li>
+              <strong>Ética:</strong> Atuamos com compromisso, honestidade e
+              respeito à criança e à família.
+            </li>
+            <li>
+              <strong>Ciência:</strong> Nossa atuação é baseada em evidências
+              científicas.
+            </li>
           </ul>
         </div>
       </div>
       <div class="about-mission-vision">
         <div class="mission">
           <h3>Nossa Missão</h3>
-          <p>Atender indivíduos dentro do espectro autista com excelência, aplicando a transdisciplinaridade profissional e utilizando a Análise Aplicada do Comportamento (ABA) como eixo terapêutico central.</p>
+          <p>
+            Atender indivíduos dentro do espectro autista com excelência,
+            aplicando a transdisciplinaridade profissional e utilizando a
+            Análise Aplicada do Comportamento (ABA) como eixo terapêutico
+            central.
+          </p>
         </div>
         <div class="vision">
           <h3>Nossa Visão</h3>
-          <p>Ser referência no tratamento do indivíduo com Transtorno do Espectro Autista (TEA), tendo como principal característica a transdisciplinaridade profissional.</p>
+          <p>
+            Ser referência no tratamento do indivíduo com Transtorno do Espectro
+            Autista (TEA), tendo como principal característica a
+            transdisciplinaridade profissional.
+          </p>
         </div>
       </div>
     </div>
@@ -77,47 +161,75 @@
   <section *ngIf="activeSection === 'servicos'" class="services-section">
     <div class="container">
       <h2 class="section-title">Nossos Serviços</h2>
-      <p class="services-intro">Oferecemos uma abordagem transdisciplinar para o tratamento do autismo, com profissionais especializados trabalhando de forma integrada.</p>
+      <p class="services-intro">
+        Oferecemos uma abordagem transdisciplinar para o tratamento do autismo,
+        com profissionais especializados trabalhando de forma integrada.
+      </p>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">🧠</div>
           <h3>Avaliação Diagnóstica</h3>
-          <p>Avaliação completa realizada por equipe multidisciplinar para identificação do Transtorno do Espectro Autista e elaboração de plano terapêutico individualizado.</p>
+          <p>
+            Avaliação completa realizada por equipe multidisciplinar para
+            identificação do Transtorno do Espectro Autista e elaboração de
+            plano terapêutico individualizado.
+          </p>
         </div>
         <div class="service-card">
           <div class="service-icon">👨‍⚕️</div>
           <h3>Análise do Comportamento Aplicada (ABA)</h3>
-          <p>Intervenção baseada em evidências científicas para desenvolvimento de habilidades e redução de comportamentos desafiadores.</p>
+          <p>
+            Intervenção baseada em evidências científicas para desenvolvimento
+            de habilidades e redução de comportamentos desafiadores.
+          </p>
         </div>
         <div class="service-card">
           <div class="service-icon">🗣️</div>
           <h3>Fonoaudiologia</h3>
-          <p>Terapia focada no desenvolvimento da comunicação, linguagem e habilidades sociais.</p>
+          <p>
+            Terapia focada no desenvolvimento da comunicação, linguagem e
+            habilidades sociais.
+          </p>
         </div>
         <div class="service-card">
           <div class="service-icon">🤸‍♂️</div>
           <h3>Terapia Ocupacional</h3>
-          <p>Intervenção para desenvolvimento de habilidades motoras, sensoriais e de vida diária.</p>
+          <p>
+            Intervenção para desenvolvimento de habilidades motoras, sensoriais
+            e de vida diária.
+          </p>
         </div>
         <div class="service-card">
           <div class="service-icon">👨‍👩‍👧‍👦</div>
           <h3>Orientação Familiar</h3>
-          <p>Suporte e orientação para familiares, promovendo estratégias para lidar com os desafios do dia a dia.</p>
+          <p>
+            Suporte e orientação para familiares, promovendo estratégias para
+            lidar com os desafios do dia a dia.
+          </p>
         </div>
         <div class="service-card">
           <div class="service-icon">🏫</div>
           <h3>Acompanhamento Escolar</h3>
-          <p>Orientação para inclusão escolar e adaptações necessárias para o desenvolvimento acadêmico.</p>
+          <p>
+            Orientação para inclusão escolar e adaptações necessárias para o
+            desenvolvimento acadêmico.
+          </p>
         </div>
         <div class="service-card">
           <div class="service-icon">🎵</div>
           <h3>Musicoterapia</h3>
-          <p>Utilização da música como ferramenta terapêutica para estimular o desenvolvimento e a expressão.</p>
+          <p>
+            Utilização da música como ferramenta terapêutica para estimular o
+            desenvolvimento e a expressão.
+          </p>
         </div>
         <div class="service-card">
           <div class="service-icon">🏃</div>
           <h3>Psicomotricidade</h3>
-          <p>Desenvolvimento da consciência corporal, coordenação motora e integração sensorial.</p>
+          <p>
+            Desenvolvimento da consciência corporal, coordenação motora e
+            integração sensorial.
+          </p>
         </div>
       </div>
     </div>
@@ -127,34 +239,54 @@
   <section *ngIf="activeSection === 'equipe'" class="team-section">
     <div class="container">
       <h2 class="section-title">Nossa Equipe</h2>
-      <p class="team-intro">Contamos com profissionais especializados e comprometidos com o desenvolvimento e bem-estar de nossos pacientes.</p>
+      <p class="team-intro">
+        Contamos com profissionais especializados e comprometidos com o
+        desenvolvimento e bem-estar de nossos pacientes.
+      </p>
       <div class="team-description">
-        <p>Temos uma equipe composta por fonoaudiólogos, terapeutas ocupacionais, psicopedagogos, psicólogos, psicomotricistas, musicoterapeutas e profissionais de educação física. Além de parceria com centros de neurociências para garantir a melhor abordagem baseada em evidências científicas.</p>
+        <p>
+          Temos uma equipe composta por fonoaudiólogos, terapeutas ocupacionais,
+          psicopedagogos, psicólogos, psicomotricistas, musicoterapeutas e
+          profissionais de educação física. Além de parceria com centros de
+          neurociências para garantir a melhor abordagem baseada em evidências
+          científicas.
+        </p>
       </div>
       <div class="team-grid">
         <div class="team-member">
           <div class="member-photo">👩‍⚕️</div>
           <h3>Dra. Ana Silva</h3>
           <p class="member-role">Neurologista - Diretora Clínica</p>
-          <p>Especialista em Neurologia Infantil com foco em Transtornos do Neurodesenvolvimento.</p>
+          <p>
+            Especialista em Neurologia Infantil com foco em Transtornos do
+            Neurodesenvolvimento.
+          </p>
         </div>
         <div class="team-member">
           <div class="member-photo">👨‍⚕️</div>
           <h3>Dr. Carlos Oliveira</h3>
           <p class="member-role">Psiquiatra</p>
-          <p>Especialista em Psiquiatria da Infância e Adolescência com experiência em TEA.</p>
+          <p>
+            Especialista em Psiquiatria da Infância e Adolescência com
+            experiência em TEA.
+          </p>
         </div>
         <div class="team-member">
           <div class="member-photo">👩‍💼</div>
           <h3>Mariana Santos</h3>
           <p class="member-role">Psicóloga</p>
-          <p>Especialista em Análise do Comportamento Aplicada (ABA) e Terapia Cognitivo-Comportamental.</p>
+          <p>
+            Especialista em Análise do Comportamento Aplicada (ABA) e Terapia
+            Cognitivo-Comportamental.
+          </p>
         </div>
         <div class="team-member">
           <div class="member-photo">👩‍🔬</div>
           <h3>Juliana Costa</h3>
           <p class="member-role">Fonoaudióloga</p>
-          <p>Especialista em Comunicação Alternativa e Transtornos da Linguagem.</p>
+          <p>
+            Especialista em Comunicação Alternativa e Transtornos da Linguagem.
+          </p>
         </div>
       </div>
     </div>
@@ -168,10 +300,18 @@
         <div class="contact-info">
           <h3>Informações de Contato</h3>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> Av. Principal, 1234 - Centro, Sua Cidade - Estado</li>
+            <li>
+              <strong>Endereço:</strong> Av. Principal, 1234 - Centro, Sua
+              Cidade - Estado
+            </li>
             <li><strong>Telefone:</strong> (11) 5555-5555</li>
-            <li><strong>E-mail:</strong> contato&#64;clinicainclusivamente.com.br</li>
-            <li><strong>Horário de Funcionamento:</strong> Segunda a Sexta, das 8h às 18h</li>
+            <li>
+              <strong>E-mail:</strong> contato&#64;clinicainclusivamente.com.br
+            </li>
+            <li>
+              <strong>Horário de Funcionamento:</strong> Segunda a Sexta, das 8h
+              às 18h
+            </li>
           </ul>
           <div class="social-media">
             <h3>Redes Sociais</h3>
@@ -187,23 +327,28 @@
           <form>
             <div class="form-group">
               <label for="name">Nome</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" id="name" name="name" required />
             </div>
             <div class="form-group">
               <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" required />
             </div>
             <div class="form-group">
               <label for="phone">Telefone</label>
-              <input type="tel" id="phone" name="phone">
+              <input type="tel" id="phone" name="phone" />
             </div>
             <div class="form-group">
               <label for="subject">Assunto</label>
-              <input type="text" id="subject" name="subject" required>
+              <input type="text" id="subject" name="subject" required />
             </div>
             <div class="form-group">
               <label for="message">Mensagem</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
             </div>
             <button type="submit" class="btn-primary">Enviar Mensagem</button>
           </form>
@@ -218,8 +363,10 @@
   <div class="container">
     <div class="footer-content">
       <div class="footer-logo">
-        <h2>Clínica Inclusivamente</h2>
-        <p>Especializada em Autismo</p>
+        <img
+          src="https://i.ibb.co/VWBqftmq/A-o-Loc.png"
+          alt="Logo da Clínica Inclusivamente"
+        />
       </div>
       <div class="footer-links">
         <h3>Links Rápidos</h3>
@@ -233,9 +380,12 @@
       </div>
       <div class="footer-newsletter">
         <h3>Receba Nossas Novidades</h3>
-        <p>Cadastre-se para receber informações sobre autismo e nossas atividades.</p>
+        <p>
+          Cadastre-se para receber informações sobre autismo e nossas
+          atividades.
+        </p>
         <form class="newsletter-form">
-          <input type="email" placeholder="Seu e-mail" required>
+          <input type="email" placeholder="Seu e-mail" required />
           <button type="submit" class="btn-secondary">Cadastrar</button>
         </form>
       </div>

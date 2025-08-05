@@ -1,19 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&display=swap");
+
 /* Estilos globais - Tema Infantil de Fantasia */
 :root {
-  --primary-color: #8A2BE2; /* Roxo vibrante */
-  --secondary-color: #32CD32; /* Verde limão */
-  --accent-color: #FF69B4; /* Rosa quente */
-  --text-color: #4B0082; /* Índigo */
+  --primary-color: #8a2be2; /* Roxo vibrante */
+  --secondary-color: #32cd32; /* Verde limão */
+  --accent-color: #ff69b4; /* Rosa quente */
+  --text-color: #4b0082; /* Índigo */
   --light-text: #fff;
-  --background-color: #1E88E5; /* Azul céu mais intenso */
-  --body-background: var(--background-color); /* Garantir que o corpo use a cor de fundo azul céu */
+  --background-color: #1e88e5; /* Azul céu mais intenso */
+  --body-background: var(
+    --background-color
+  ); /* Garantir que o corpo use a cor de fundo azul céu */
   --section-padding: 80px 0;
   --border-radius: 20px; /* Bordas mais arredondadas */
   --box-shadow: 0 8px 15px rgba(138, 43, 226, 0.2); /* Sombra roxa */
   --transition: all 0.4s ease;
-  --fantasy-font: 'Comic Sans MS', cursive, sans-serif;
-  --header-bg: #9370DB; /* Roxo médio */
-  --footer-bg: #9370DB; /* Roxo médio */
+  --fantasy-font: "Comic Sans MS", cursive, sans-serif;
+  --header-bg: #9370db; /* Roxo médio */
+  --footer-bg: #9370db; /* Roxo médio */
 }
 
 * {
@@ -23,15 +27,13 @@
 }
 
 body {
-  font-family: var(--fantasy-font);
   color: var(--text-color);
   line-height: 1.6;
   background-color: var(--background-color); /* Azul céu */
   background-image: 
-    /* Nuvens */
-    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><ellipse cx="30" cy="30" rx="20" ry="10" fill="white" opacity="0.8"/><ellipse cx="50" cy="25" rx="15" ry="8" fill="white" opacity="0.8"/><ellipse cx="70" cy="30" rx="20" ry="10" fill="white" opacity="0.8"/></svg>'),
+    /* Nuvens */ url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><ellipse cx="30" cy="30" rx="20" ry="10" fill="white" opacity="0.8"/><ellipse cx="50" cy="25" rx="15" ry="8" fill="white" opacity="0.8"/><ellipse cx="70" cy="30" rx="20" ry="10" fill="white" opacity="0.8"/></svg>'),
     /* Terra com grama estilo Mario */
-    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" viewBox="0 0 100 30"><rect x="0" y="0" width="100" height="30" fill="%23795548"/><path d="M0,0 L5,0 C5,5 10,5 10,0 L15,0 C15,5 20,5 20,0 L25,0 C25,5 30,5 30,0 L35,0 C35,5 40,5 40,0 L45,0 C45,5 50,5 50,0 L55,0 C55,5 60,5 60,0 L65,0 C65,5 70,5 70,0 L75,0 C75,5 80,5 80,0 L85,0 C85,5 90,5 90,0 L95,0 C95,5 100,5 100,0 L100,0 L100,30 L0,30 Z" fill="%234CAF50"/></svg>');
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" viewBox="0 0 100 30"><rect x="0" y="0" width="100" height="30" fill="%23795548"/><path d="M0,0 L5,0 C5,5 10,5 10,0 L15,0 C15,5 20,5 20,0 L25,0 C25,5 30,5 30,0 L35,0 C35,5 40,5 40,0 L45,0 C45,5 50,5 50,0 L55,0 C55,5 60,5 60,0 L65,0 C65,5 70,5 70,0 L75,0 C75,5 80,5 80,0 L85,0 C85,5 90,5 90,0 L95,0 C95,5 100,5 100,0 L100,0 L100,30 L0,30 Z" fill="%234CAF50"/></svg>');
   background-position: top, bottom;
   background-repeat: repeat-x;
   background-size: 200px, 100% 100px;
@@ -44,7 +46,9 @@ body {
 }
 
 /* Estilos de botões */
-.btn-primary, .btn-secondary, .btn-telegram {
+.btn-primary,
+.btn-secondary,
+.btn-telegram {
   color: var(--light-text);
   border: none;
   padding: 10px 20px;
@@ -64,23 +68,27 @@ body {
   margin: 0 5px;
 }
 
-.btn-primary:hover, .btn-secondary:hover, .btn-telegram:hover {
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-telegram:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   filter: brightness(1.1);
 }
 
-.btn-primary:active, .btn-secondary:active, .btn-telegram:active {
+.btn-primary:active,
+.btn-secondary:active,
+.btn-telegram:active {
   transform: translateY(0);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary {
-  background-color: #5865F2; /* Azul do Discord */
+  background-color: #5865f2; /* Azul do Discord */
 }
 
 .btn-secondary {
-  background-color: #000000; /* Preto do X (Twitter) */
+  background-color: #5865f2; /* Preto do X (Twitter) */
 }
 
 .btn-telegram {
@@ -104,25 +112,21 @@ header {
   top: 0;
   z-index: 1000;
   border-bottom: 5px solid var(--accent-color);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 20px 0;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px;
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--light-text);
-  text-decoration: none;
   display: flex;
   align-items: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5);
   position: relative;
   padding: 10px;
   transform-style: preserve-3d;
@@ -136,7 +140,7 @@ header {
 .logo h1 {
   font-family: var(--fantasy-font);
   margin: 0;
-  background: linear-gradient(to right, #FF69B4, #8A2BE2);
+  background: linear-gradient(to right, #ff69b4, #8a2be2);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -145,7 +149,7 @@ header {
 
 .logo p {
   font-family: var(--fantasy-font);
-  color: #FFF;
+  color: #fff;
   margin: 0;
   font-size: 16px;
   letter-spacing: 1px;
@@ -153,14 +157,14 @@ header {
 }
 
 .logo::before {
-  content: '✨';
+  content: "✨";
   font-size: 24px;
   margin-right: 10px;
   animation: sparkle 2s infinite alternate;
 }
 
 .logo::after {
-  content: '✨';
+  content: "✨";
   font-size: 24px;
   margin-left: 10px;
   animation: sparkle 2s infinite alternate-reverse;
@@ -219,23 +223,25 @@ nav ul li a {
   border: 2px solid transparent;
 }
 
-nav ul li a:hover, nav ul li a.active {
-  color: #FFF;
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fff;
   background-color: var(--accent-color);
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border: 2px solid #FFC0CB;
+  border: 2px solid #ffc0cb;
 }
 
 nav ul li a::before {
-  content: '🌟';
+  content: "🌟";
   margin-right: 5px;
   font-size: 14px;
   opacity: 0;
   transition: var(--transition);
 }
 
-nav ul li a:hover::before, nav ul li a.active::before {
+nav ul li a:hover::before,
+nav ul li a.active::before {
   opacity: 1;
 }
 
@@ -246,7 +252,7 @@ nav ul li a.active {
 /* Estilos da seção hero */
 .hero-section {
   padding: 180px 0 120px;
-  background: linear-gradient(135deg, #9370DB, #8A2BE2);
+  background: linear-gradient(135deg, #168dff, #8de8fe);
   color: var(--light-text);
   position: relative;
   overflow: hidden;
@@ -256,7 +262,7 @@ nav ul li a.active {
 }
 
 .hero-section:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -278,7 +284,7 @@ nav ul li a.active {
 }
 
 .hero-section::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -295,6 +301,9 @@ nav ul li a.active {
   justify-content: space-between;
   position: relative;
   z-index: 1;
+  /* Essas propriedades garantem que o container não ocupe a largura toda da tela em monitores grandes */
+  max-width: 1200px; /* Você pode ajustar este valor */
+  margin: 0 auto;
 }
 
 .hero-content {
@@ -312,7 +321,8 @@ nav ul li a.active {
 }
 
 @keyframes float-content {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -326,15 +336,15 @@ nav ul li a.active {
   line-height: 1.2;
   font-weight: 700;
   font-family: var(--fantasy-font);
-  color: #FFF;
-  text-shadow: 3px 3px 0 var(--accent-color), 6px 6px 0 rgba(0,0,0,0.2);
+  color: #fff;
+  text-shadow: 3px 3px 0 var(--accent-color), 6px 6px 0 rgba(0, 0, 0, 0.2);
   letter-spacing: 1px;
   transform: rotate(-1deg);
   position: relative;
 }
 
 .hero-content h2::before {
-  content: '🌈';
+  content: "🌈";
   position: absolute;
   left: -40px;
   top: -10px;
@@ -343,7 +353,7 @@ nav ul li a.active {
 }
 
 .hero-content h2::after {
-  content: '✨';
+  content: "✨";
   position: absolute;
   right: -30px;
   bottom: 0;
@@ -365,11 +375,11 @@ nav ul li a.active {
   margin-bottom: 30px;
   line-height: 1.8;
   font-family: var(--fantasy-font);
-  color: #FFF;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   position: relative;
   padding-left: 20px;
-  border-left: 4px dotted rgba(255,255,255,0.5);
+  border-left: 4px dotted rgba(255, 255, 255, 0.5);
 }
 
 .hero-image {
@@ -397,7 +407,7 @@ section {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 80px;
   height: 4px;
@@ -450,7 +460,7 @@ section {
 }
 
 .about-values li::before {
-  content: '✓';
+  content: "✓";
   color: var(--primary-color);
   position: absolute;
   left: 0;
@@ -463,7 +473,8 @@ section {
   margin-top: 40px;
 }
 
-.mission, .vision {
+.mission,
+.vision {
   flex: 1;
   background-color: #f5f9ff;
   padding: 30px;
@@ -471,7 +482,8 @@ section {
   border-left: 4px solid var(--primary-color);
 }
 
-.mission h3, .vision h3 {
+.mission h3,
+.vision h3 {
   color: var(--primary-color);
   margin-bottom: 15px;
   font-size: 1.5rem;
@@ -479,7 +491,7 @@ section {
 
 /* Estilos da seção Serviços */
 .services-section {
-  background-color: #E6F7FF;
+  background-color: #e6f7ff;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,50 Q35,20 50,50 T80,50" stroke="%238A2BE2" fill="none" opacity="0.1" stroke-width="2"/></svg>');
   position: relative;
   overflow: hidden;
@@ -492,7 +504,7 @@ section {
 }
 
 .services-section::before {
-  content: '🦄';
+  content: "🦄";
   position: absolute;
   top: 20px;
   left: 20px;
@@ -502,7 +514,7 @@ section {
 }
 
 .services-section::after {
-  content: '🧚';
+  content: "🧚";
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -559,7 +571,7 @@ section {
 }
 
 .services-intro::before {
-  content: '✨';
+  content: "✨";
   position: absolute;
   top: -15px;
   left: 20px;
@@ -567,7 +579,7 @@ section {
 }
 
 .services-intro::after {
-  content: '✨';
+  content: "✨";
   position: absolute;
   bottom: -15px;
   right: 20px;
@@ -596,13 +608,18 @@ section {
 }
 
 .service-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 5px;
-  background: linear-gradient(to right, var(--primary-color), var(--accent-color), var(--secondary-color));
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--accent-color),
+    var(--secondary-color)
+  );
 }
 
 .service-card:hover {
@@ -646,7 +663,7 @@ section {
 }
 
 .service-card h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -664,7 +681,7 @@ section {
 
 /* Estilos da seção Nossa Equipe */
 .team-section {
-  background-color: #F0E6FF; /* Fundo lilás claro */
+  background-color: #f0e6ff; /* Fundo lilás claro */
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M10,30 C20,10 30,10 40,30 S60,50 70,30 S90,10 90,30" stroke="%23FF69B4" fill="none" opacity="0.2" stroke-width="2"/></svg>');
   position: relative;
   overflow: hidden;
@@ -675,7 +692,7 @@ section {
 }
 
 .team-section::before {
-  content: '🧙‍♂️';
+  content: "🧙‍♂️";
   position: absolute;
   top: 30px;
   right: 50px;
@@ -685,7 +702,8 @@ section {
 }
 
 @keyframes float-wizard {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
   }
   25% {
@@ -715,7 +733,7 @@ section {
 }
 
 .team-intro::after {
-  content: '✨';
+  content: "✨";
   position: absolute;
   top: -15px;
   right: 20px;
@@ -801,13 +819,18 @@ section {
 }
 
 .member-photo::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -10px;
   left: -10px;
   right: -10px;
   bottom: -10px;
-  background: linear-gradient(45deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--accent-color),
+    var(--secondary-color)
+  );
   opacity: 0.3;
   z-index: -1;
   animation: rotate 3s infinite linear;
@@ -832,13 +855,18 @@ section {
 }
 
 .team-member h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3px;
   left: 25%;
   width: 50%;
   height: 2px;
-  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-color),
+    transparent
+  );
 }
 
 .member-role {
@@ -894,7 +922,7 @@ section {
 
 /* Estilos da seção Contato */
 .contact-section {
-  background-color: #E6F7FF;
+  background-color: #e6f7ff;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,80 Q35,60 50,80 T80,80" stroke="%23FF69B4" fill="none" opacity="0.1" stroke-width="2"/></svg>');
   position: relative;
   overflow: hidden;
@@ -906,7 +934,7 @@ section {
 }
 
 .contact-section::before {
-  content: '📫';
+  content: "📫";
   position: absolute;
   top: 30px;
   left: 50px;
@@ -916,7 +944,8 @@ section {
 }
 
 @keyframes float-mail {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
   }
   50% {
@@ -931,7 +960,8 @@ section {
   z-index: 2;
 }
 
-.contact-info, .contact-form {
+.contact-info,
+.contact-form {
   flex: 1;
 }
 
@@ -946,13 +976,17 @@ section {
 }
 
 .contact-info::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--accent-color)
+  );
 }
 
 .contact-info h3 {
@@ -965,7 +999,7 @@ section {
 }
 
 .contact-info h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -989,7 +1023,7 @@ section {
 }
 
 .contact-list li::before {
-  content: '🌟';
+  content: "🌟";
   position: absolute;
   left: 0;
   font-size: 16px;
@@ -1032,7 +1066,7 @@ section {
 }
 
 .social-icon::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1066,13 +1100,17 @@ section {
 }
 
 .contact-form::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(to right, var(--accent-color), var(--secondary-color));
+  background: linear-gradient(
+    to right,
+    var(--accent-color),
+    var(--secondary-color)
+  );
 }
 
 .contact-form h3 {
@@ -1085,7 +1123,7 @@ section {
 }
 
 .contact-form h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -1110,7 +1148,7 @@ section {
 }
 
 .form-group label::before {
-  content: '✏️';
+  content: "✏️";
   position: absolute;
   left: 0;
   font-size: 14px;
@@ -1144,19 +1182,21 @@ section {
 /* Estilos do rodapé */
 footer {
   background-color: var(--footer-bg);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M10,10 Q30,30 50,10 T90,10" stroke="white" fill="none" opacity="0.1" stroke-width="2"/></svg>');
-  color: #fff;
-  padding: 70px 0 20px;
+  background-image: url("./assets/images/footer-mariobross.png");
+  padding: 280px 20px 20px 120px;
   position: relative;
   overflow: hidden;
   border-top: 8px solid var(--accent-color);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  margin-top: 20px;
+  margin-top: -110px;
+
+  font-family: "Playwrite BE WAL", cursive;
+  font-optical-sizing: auto;
 }
 
 footer::before {
-  content: '🌙';
+  content: "🌙";
   position: absolute;
   top: 20px;
   right: 50px;
@@ -1166,7 +1206,7 @@ footer::before {
 }
 
 footer::after {
-  content: '⭐';
+  content: "⭐";
   position: absolute;
   bottom: 30px;
   left: 50px;
@@ -1176,7 +1216,8 @@ footer::after {
 }
 
 @keyframes float-moon {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
   }
   50% {
@@ -1205,7 +1246,7 @@ footer::after {
 
 .footer-column h3 {
   margin-bottom: 20px;
-  color: #FFF;
+  color: #fff;
   font-size: 1.3rem;
   font-family: var(--fantasy-font);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -1214,7 +1255,7 @@ footer::after {
 }
 
 .footer-column h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -1234,7 +1275,7 @@ footer::after {
 }
 
 .footer-links li::before {
-  content: '🌟';
+  content: "🌟";
   position: absolute;
   left: 0;
   font-size: 14px;
@@ -1242,7 +1283,7 @@ footer::after {
 
 .footer-links a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   transition: var(--transition);
   font-family: var(--fantasy-font);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -1251,7 +1292,7 @@ footer::after {
 }
 
 .footer-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -1310,13 +1351,18 @@ footer::after {
 }
 
 .newsletter-form button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   transition: 0.5s;
 }
 
@@ -1347,20 +1393,20 @@ footer::after {
   .hero-section .container {
     flex-direction: column;
   }
-  
+
   .hero-content {
     max-width: 100%;
     margin-bottom: 40px;
   }
-  
+
   .hero-image {
     max-width: 100%;
   }
-  
+
   .about-content {
     flex-direction: column;
   }
-  
+
   .contact-content {
     flex-direction: column;
   }
@@ -1371,19 +1417,24 @@ footer::after {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .logo {
     margin-bottom: 15px;
   }
-  
+
   .main-nav ul {
     justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
   }
-  
+
   .main-nav li {
     margin: 0 10px;
   }
-  
+
   .services-grid,
   .team-grid {
     grid-template-columns: 1fr;
@@ -1395,15 +1446,15 @@ footer::after {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .main-nav li {
     margin: 5px 0;
   }
-  
+
   .hero-content h2 {
     font-size: 28px;
   }
-  
+
   .section-title {
     font-size: 28px;
   }
